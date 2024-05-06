@@ -23,6 +23,19 @@ p {
     src: url('DMSans/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
+/* transtion */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+}
+
+
 /* NAV BAR */
 
 nav ul {
@@ -54,6 +67,7 @@ nav a:hover {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
+    animation: fadeInUp 1s forwards;
 }
 
 .home-text h1{
@@ -90,3 +104,27 @@ nav a:hover {
     max-width: 50%;
 }
 
+/* ABOUT STYLING */ 
+
+.about-box{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    animation: fadeInUp 1s forwards;
+}
+
+.about-title{
+
+}
+
+.about-title h1{
+    font-size: 500%;
+}
+
+.about-text p{
+    font-size: 200%;
+}
