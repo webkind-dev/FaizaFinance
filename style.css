@@ -118,7 +118,11 @@ nav a:hover {
 }
 
 .about-title{
+    padding-right: 10%
+}
 
+.about-title h1{
+    padding-right: 0%
 }
 
 .about-title h1{
@@ -127,4 +131,5 @@ nav a:hover {
 
 .about-text p{
     font-size: 200%;
+    margin-left: 0%;
 }
