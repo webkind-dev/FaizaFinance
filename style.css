@@ -160,3 +160,64 @@ nav a:hover {
 .left-side p{
     font-size: 200%;
 }
+
+/* RESOURCES STYLING */ 
+.title-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: left; 
+    gap: 10px;
+    margin: 5%;
+    animation: fadeInUp 1s forwards;
+}
+
+.title-box h1{
+    font-size: 500%;
+    animation: fadeInUp 1s forwards;
+}
+
+.res-title{
+    font-size: 400%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    animation: fadeInUp 1s forwards;
+}
+
+.box-row{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    animation: fadeInUp 1s forwards;
+    justify-content: space-between; 
+    gap:20px;
+    align-items:flex-start
+}
+
+.single-box a{
+    color: #1B4B5D;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.white-box-title{
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.white-box{
+    padding-top: 0.1%;
+    color: #1B4B5D;
+    background-color: white;
+    padding-bottom: 0.1%;
+}
+
+.blue-box{
+    padding-top: 0.1%;
+    color: white;
+    background-color: #1B4B5D;
+}
