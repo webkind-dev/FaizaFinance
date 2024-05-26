@@ -158,11 +158,11 @@ nav a:hover {
 }
 
 .left-side p{
-    font-size: 200%;
+    font-size: 170%;
 }
 
 /* RESOURCES STYLING */ 
-.title-box{
+.title-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -172,52 +172,95 @@ nav a:hover {
     animation: fadeInUp 1s forwards;
 }
 
-.title-box h1{
+.title-box h1 {
     font-size: 500%;
     animation: fadeInUp 1s forwards;
 }
 
-.res-title{
+.res-title {
     font-size: 400%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 5%;
+    margin-top: 5%;;
     animation: fadeInUp 1s forwards;
 }
 
-.box-row{
+.white-box {
+    color: #1B4B5D;
+    background-color: white;
+    padding: 0.1%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.box-row {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
     display: flex;
-    flex-direction: row;
-    animation: fadeInUp 1s forwards;
-    justify-content: space-between; 
-    gap:20px;
-    align-items:flex-start
+    transition: transform 0.5s ease-in-out;
 }
 
-.single-box a{
+.single-box {
+    min-width: calc(33.333% - 20px); 
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left;
+    flex: 0 0 calc(33.333% - 20px);
+}
+
+.white-box-title {
     color: #1B4B5D;
     font-size: 200%;
     font-weight: bold;
 }
 
-.white-box-title{
-    color: white;
-    font-size: 200%;
-    font-weight: bold;
-}
-
-.white-box{
-    padding-top: 0.1%;
+.arrow {
+    bottom: 5%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #FFF;
     color: #1B4B5D;
-    background-color: white;
-    padding-bottom: 0.1%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.blue-box{
-    padding-top: 0.1%;
+.arrow:hover {
+    background-color: #1B4B5D;
+    color: #FFF;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.blue-box {
     color: white;
     background-color: #1B4B5D;
+    padding: 0.1%;
+}
+
+.blue-box-title {
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
 }

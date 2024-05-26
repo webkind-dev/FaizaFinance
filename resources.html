@@ -4,53 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
-
-    <title>Resoucres</title>
+    <script src="script.js" defer></script>
+    <title>Resources</title>
 </head>
 <body class="body">
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About us</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="resources.html">Resources</a></li>
             </ul>
         </nav>
     </header>
-
-
     <main>
         <div class="title-box">
             <h1>Resources</h1>
         </div>
+
         <div class="white-box">
             <h1 class="res-title">Scholarships</h1>
-            <div class="box-row">
-                <div class="single-box">
-                    <a href="https://islamicscholarshipfund.org/" target="_blank">Islamic Scholarship Fund</a>
+            <div class="carousel-track-container">
+              <div class="box-row carousel-track">
+                    <div class="single-box">
+                    <a class="white-box-title" href="https://islamicscholarshipfund.org/" target="_blank">Islamic Scholarship Fund</a>
                     <p>The Islamic Scholarship Fund provides multiple scholarships for Muslim students studying in policy, media, law, and film related majors. The scholarship application opens in November and remains open until March. The scholarship award amounts range from $3,000-$10,000.</p>
-                </div>
-                <div class="single-box">
-                    <a  href="https://isna.net/scholarships/" target="_blank">The Islamic Society of North America
-                    </a>
-                    <p>The Islamic Society of North America hosts multiple scholarships.The scholarship applications are due on June 30th, and award amounts range from $500-$2500. Among the scholarships awarded is the Dr. Abdulmunim A. Shakir Scholarship, which awards 20 college freshmen in any field of study $1,000.</p>
-                </div>
-                <div class="single-box">
-                    <a href="https://www.zakat.org/get-involved/scholarships" target="_blank">The Zakat Foundation of America</a>
-                    <p>The Zakat foundation of America is offering $30,000 to American Muslims who are dedicated to community service. The scholarship application is due on May 15th. The scholarship is open to high-school seniors who reside in CA, DE, MD VA, FL, IL, NC, NJ, NY, PA, TX, MI, GA, or OH.</p>
+                    </div>
+                    <div class="single-box">
+                    <a class="white-box-title" href="https://isna.net/scholarships/" target="_blank">The Islamic Society of North America</a>
+                    <p>The Islamic Society of North America hosts multiple scholarships. The scholarship applications are due on June 30th, and award amounts range from $500-$2500. Among the scholarships awarded is the Dr. Abdulmunim A. Shakir Scholarship, which awards 20 college freshmen in any field of study $1,000.</p>
+                    </div>
+                    <div class="single-box">
+                    <a class="white-box-title" href="https://www.zakat.org/get-involved/scholarships" target="_blank">The Zakat Foundation of America</a>
+                    <p>The Zakat foundation of America is offering $30,000 to American Muslims who are dedicated to community service. The scholarship application is due on May 15th. The scholarship is open to high-school seniors who reside in CA, DE, MD, VA, FL, IL, NC, NJ, NY, PA, TX, MI, GA, or OH.</p>
+                    </div>
+                    <div class="single-box">
+                        <a class="white-box-title" href="link" target="_blank">Scholarship</a>
+                        <p>info about scholarship</p>
+                    </div>
+                    <div class="single-box">
+                        <a class="white-box-title" href="link" target="_blank">Scholarship</a>
+                        <p>info about scholarship</p>
+                    </div>
+                    <div class="single-box">
+                        <a class="white-box-title" href="link" target="_blank">Scholarship</a>
+                        <p>info about scholarship</p>
+                    </div>
+                <!-- Add more single-box elements as needed -->
                 </div>
             </div>
+            <button class="arrow right-arrow" onclick="nextSlide('scholarships')">&#9654;</button>
+            <button class="arrow left-arrow" onclick="previousSlide('scholarships')">&#9664;</button>
         </div>
-
-            <div class="blue-box">
-                <h1 class="res-title">Scholarships</h1>
-                <div class="box-row">
+          
+        <div class="blue-box">
+            <h1 class="res-title">Helpful Links</h1>
+            <div class="carousel-track-container">
+                <div class="box-row carousel-track">
                     <div class="single-box">
-                        <a class="white-box-title" href="https://www.saturna.com/amana/growth-fund" target="_blank">Amana Mutual Fund</a>
+                        <a class="blue-box-title" href="https://www.saturna.com/amana/growth-fund" target="_blank">Amana Mutual Fund</a>
                         <p>Amana Mutual Fund is one of the only ways to invest in Sukuk in the United States. The minimum to open an account is only $100.</p>
                     </div>
                     <div class="single-box">
+                        <a class="blue-box-title" href="https://www.zakat.org/" target="_blank">Zakat Foundation</a>
+                        <p>The Zakat Foundation of America is a non-profit that provides emergency relief, education, healthcare, and much more. They will help you calculate your zakat and are a reputable organization to donate your zakat.</p>
+                    </div>
+                    <div class="single-box">
+                        <a class="blue-box-title" href="https://acceducate.org/" target="_blank">A Continuous Charity</a>
+                        <p>A Continuous Charity (ACC) provides interest-free educational loans to Muslim students in America. The loans provided by the ACC have resulted in 4.7 million dollars of riba to be avoided.</p>
+                    </div>
+                    <div class="single-box">
+                        <a class="blue-box-title" href="link" target="_blank">Helpful</a>
+                        <p>info abt stuff</p>
+                    </div>
+                    <div class="single-box">
+                        <a class="blue-box-title" href="link" target="_blank">Helpful</a>
+                        <p>info abt stuff</p>
+                    </div>
+                    <div class="single-box">
+                        <a class="blue-box-title" href="link" target="_blank">Helpful</a>
+                        <p>info abt stuff</p>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right-arrow" onclick="nextSlide('helpful-links')">&#9654;</button>
+            <button class="arrow left-arrow" onclick="previousSlide('helpful-links')">&#9664;</button>
+        </div>
+        
+
+
+        <div class="white-box">
+            <h1 class="res-title">Financial Tips</h1>
+            <div class="carousel-track-container">
+                <div class="box-row carousel-track">
+                    <div class="single-box">
+                        <h1>The 50/30/20 Budgeting Golden Rule</h1>
+                        <p>The 50/30/20 Rule was popularized by the U.S. Senator Elizabeth Warren in her book: All Your Worth: The Ultimate Lifetime Money Plan. The rule states that 50% of your after-tax income should be spent on needs. The remaining half of the income should be split 30/20, with 30% of your income spent on your wants and the remaining 20% on savings and investments.</p>
+                    </div>
+                    <div class="single-box">
                         <h1>Academic scholarship</h1>
                         <p>The Islamic Scholarship Fund provides multiple scholarships for Muslim students studying in policy, media, law, and film related majors. The scholarship application opens in November and remains open until March. The scholarship award amounts range from $3,000-$10,000.</p>
                     </div>
@@ -58,24 +110,22 @@
                         <h1>Academic scholarship</h1>
                         <p>The Islamic Scholarship Fund provides multiple scholarships for Muslim students studying in policy, media, law, and film related majors. The scholarship application opens in November and remains open until March. The scholarship award amounts range from $3,000-$10,000.</p>
                     </div>
+                    <div class="single-box">
+                        <h1>Tip</h1>
+                        <p>writing about how to manage money</p>
+                    </div>
+                    <div class="single-box">
+                        <h1>Tip</h1>
+                        <p>writing about how to manage money</p>
+                    </div>
+                    <div class="single-box">
+                        <h1>Tip</h1>
+                        <p>writing about how to manage money</p>
+                    </div>
                 </div>
-
-                <div class="white-box">
-                    <h1 class="res-title">Scholarships</h1>
-                    <div class="box-row">
-                        <div class="single-box">
-                            <h1>Academic scholarship</h1>
-                            <p>The Islamic Scholarship Fund provides multiple scholarships for Muslim students studying in policy, media, law, and film related majors. The scholarship application opens in November and remains open until March. The scholarship award amounts range from $3,000-$10,000.</p>
-                        </div>
-                        <div class="single-box">
-                            <h1>Academic scholarship</h1>
-                            <p>The Islamic Scholarship Fund provides multiple scholarships for Muslim students studying in policy, media, law, and film related majors. The scholarship application opens in November and remains open until March. The scholarship award amounts range from $3,000-$10,000.</p>
-                        </div>
-                        <div class="single-box">
-                            <h1>Academic scholarship</h1>
-                            <p>The Islamic Scholarship Fund provides multiple scholarships for Muslim students studying in policy, media, law, and film related majors. The scholarship application opens in November and remains open until March. The scholarship award amounts range from $3,000-$10,000.</p>
-                        </div>
-                </div>
+            </div>
+            <button class="arrow right-arrow" onclick="nextSlide('financial-tips')">&#9654;</button>
+            <button class="arrow left-arrow" onclick="previousSlide('financial-tips')">&#9664;</button>
         </div>
     </main>
 </body>
