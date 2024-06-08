@@ -278,3 +278,19 @@ nav a:hover {
     align-items: center;
     padding: 0 20px; /* Optional: adds some padding */
 }
+/*Newsletter*/
+
+.news-button{
+    color: #1B4B5D;
+    background: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 6%;
+}
+.newshead h1{
+    font-size: 500%;
+}
