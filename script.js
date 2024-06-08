@@ -1,41 +1,53 @@
-let currentIndex = 0;
+let currentIndices = {
+  'scholarships': 0,
+  'helpful-links': 0,
+  'financial-tips': 0
+};
 
 document.addEventListener("DOMContentLoaded", function () {
-    const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-    const slideWidth = slides[0].getBoundingClientRect().width;
+  const carousels = document.querySelectorAll('.carousel-track');
 
-    function setSlidePosition() {
-      slides.forEach((slide, index) => {
-        slide.style.left = (slideWidth + 20) * index + 'px'; // Adjust for the gap
-      });
-    }
-  
-    setSlidePosition();
+  carousels.forEach(track => {
+      const slides = Array.from(track.children);
+      const slideWidth = slides[0].getBoundingClientRect().width;
 
-    // Set transition property here
-    track.style.transition = 'transform 0.5s ease-in-out';
-  
-    function updateTrackPosition() {
-      const amountToMove = -(currentIndex * (slideWidth + 20)); // Adjust for the gap
+      function setSlidePosition() {
+          slides.forEach((slide, index) => {
+              slide.style.left = (slideWidth + 20) * index + 'px'; // Adjust for the gap
+          });
+      }
+
+      setSlidePosition();
+      track.style.transition = 'transform 0.5s ease-in-out';
+  });
+
+  function updateTrackPosition(carouselId) {
+      const track = document.getElementById(carouselId);
+      const slides = Array.from(track.children);
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      const amountToMove = -(currentIndices[carouselId] * (slideWidth + 20)); // Adjust for the gap
       track.style.transform = 'translateX(' + amountToMove + 'px)';
-    }
-  
-    window.nextSlide = function() {
-      if (currentIndex < slides.length - 3) {
-        currentIndex++;
+  }
+
+  window.nextSlide = function(carouselId) {
+      const track = document.getElementById(carouselId);
+      const slides = Array.from(track.children);
+      if (currentIndices[carouselId] < slides.length - 3) {
+          currentIndices[carouselId]++;
       } else {
-        currentIndex = 0; // Loop back to the start
+          currentIndices[carouselId] = 0; // Loop back to the start
       }
-      updateTrackPosition();
-    }
-  
-    window.previousSlide = function() {
-      if (currentIndex > 0) {
-        currentIndex--;
+      updateTrackPosition(carouselId);
+  }
+
+  window.previousSlide = function(carouselId) {
+      const track = document.getElementById(carouselId);
+      const slides = Array.from(track.children);
+      if (currentIndices[carouselId] > 0) {
+          currentIndices[carouselId]--;
       } else {
-        currentIndex = slides.length - 3; // Loop back to the end
+          currentIndices[carouselId] = slides.length - 3; // Loop back to the end
       }
-      updateTrackPosition();
-    }
+      updateTrackPosition(carouselId);
+  }
 });

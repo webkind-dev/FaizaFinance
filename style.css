@@ -37,57 +37,27 @@ p {
 
 
 /* NAV BAR */
+
 nav ul {
     display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: auto; 
+    justify-content: right;
 }
 
 nav ul li {
-    margin: 0 10px; 
+    display: inline;
+    margin: 10px;
 }
 
 nav ul li a {
     color: white;
-    padding: 5px 10px;
+    padding: 5px;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-    color: #d0cccc;
+nav a:hover {
+    color: #d0cccc
 }
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        justify-content: flex-end; 
-    }
-
-    nav ul li {
-        margin: 5px 5px; 
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        justify-content: flex-end; 
-    }
-
-    nav ul li {
-        margin: 5px 5px; 
-    }
-
-    nav ul li a {
-        padding: 5px; 
-    }
-}
+/* HOMEPAGE */
 
 .home-box{
     display: flex;
@@ -136,193 +106,105 @@ nav ul li a:hover {
 
 /* ABOUT STYLING */ 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.about-box {
+.about-box{
     display: flex;
-    flex-wrap: wrap; 
     justify-content: space-between; 
     align-items: center; 
     gap: 10px;
-    margin: 0 5% 5%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
     animation: fadeInUp 1s forwards;
 }
 
-.about-title {
+.about-title{
     padding-right: 10%;
-    flex: 1; 
 }
 
-.about-title h1 {
-    font-size: 3em; 
+.about-title h1{
+    font-size: 500%;
     white-space: nowrap;
 }
 
-.about-text {
-    flex: 2; 
+.about-text p{
+    font-size: 200%;
 }
 
-.about-text p {
-    font-size: 1.5em; 
+.book-pic{
+    max-width: 125%;
+    padding: 0%;
+    margin: 0%
 }
 
-.book-pic {
-    max-width: 100%; 
-    height: auto; 
-    padding: 0;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .navbar ul li {
-        margin: 5px 0;
-    }
-
-    .about-box {
-        flex-direction: column; 
-        align-items: flex-start; 
-    }
-
-    .about-title {
-        padding-right: 0;
-        width: 100%; 
-    }
-
-    .about-title h1 {
-        font-size: 2em; 
-    }
-
-    .about-text {
-        width: 100%; 
-    }
-
-    .about-text p {
-        font-size: 1.2em; 
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .about-title h1 {
-        font-size: 1.5em; 
-    }
-
-    .about-text p {
-        font-size: 1em; 
-    }
-}
 /* JOIN STYLING */ 
 
-.left-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px;
-    padding: 5%; 
-    max-width: 800px; 
-    margin: 0 auto; 
-    color: #1B4B5D;
+.join-info{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    margin-right: 5%;
     animation: fadeInUp 1s forwards;
-    background-color: #ffffff; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: #1B4B5D;
+    color: white;
 }
 
-.left-side h1 {
-    font-size: 3em; 
-    text-align: center; 
+.join-info h1{
+    font-size: 500%;
 }
 
-.left-side p {
-    font-size: 1.2em; 
-    text-align: justify; 
+.join-info p{
+    font-size: 170%;
 }
 
-@media (max-width: 768px) {
-    .left-side {
-        padding: 3%; 
-    }
-
-    .left-side h1 {
-        font-size: 2.5em; 
-    }
-
-    .left-side p {
-        font-size: 1.1em; 
-    }
+.join-button{
+    color: #1B4B5D;
+    background: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 6%;
 }
 
-@media (max-width: 480px) {
-    .left-side {
-        padding: 2%; 
-    }
-
-    .left-side h1 {
-        font-size: 2em; 
-    }
-
-    .left-side p {
-        font-size: 1em; 
-    }
+.join-button:hover {
+    color: white;
+    background: #5e8795;
 }
+
+
 
 /* RESOURCES STYLING */ 
 .title-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    align-items: flex-start; 
+    align-items: left; 
     gap: 10px;
     margin: 5%;
     animation: fadeInUp 1s forwards;
 }
 
 .title-box h1 {
-    font-size: 3em; 
+    font-size: 500%;
     animation: fadeInUp 1s forwards;
 }
 
 .res-title {
-    font-size: 2.5em; 
+    font-size: 400%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 5%;
+    margin-top: 5%;;
     animation: fadeInUp 1s forwards;
-}
-
-.white-box, .blue-box {
-    padding: 2%; 
-    position: relative;
-    overflow: hidden;
 }
 
 .white-box {
     color: #1B4B5D;
     background-color: white;
-}
-
-.blue-box {
-    color: white;
-    background-color: #1B4B5D;
+    padding: 0.1%;
+    position: relative;
+    overflow: hidden;
 }
 
 .carousel-track-container {
@@ -331,7 +213,9 @@ body {
 }
 
 .box-row {
-    margin: 0 5% 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -344,22 +228,14 @@ body {
     flex: 0 0 calc(33.333% - 20px);
 }
 
-.white-box-title, .blue-box-title {
-    font-size: 1.5em; 
+.white-box-title {
+    color: #1B4B5D;
+    font-size: 200%;
     font-weight: bold;
 }
 
-.white-box-title {
-    color: #1B4B5D;
-}
-
-.blue-box-title {
-    color: white;
-}
-
 .arrow {
-    position: absolute;
-    top: 50%;
+    bottom: 5%;
     transform: translateY(-50%);
     background: none;
     border: none;
@@ -374,4 +250,31 @@ body {
     border-radius: 50%;
     background-color: #FFF;
     color: #1B4B5D;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.arrow:hover {
+    background-color: #1B4B5D;
+    color: #FFF;
+}
+
+
+.blue-box {
+    color: white;
+    background-color: #1B4B5D;
+    padding: 0.1%;
+}
+
+.blue-box-title {
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Optional: adds some padding */
 }
