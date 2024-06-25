@@ -154,9 +154,11 @@ nav a:hover {
 
 .join-info p{
     font-size: 170%;
+    margin-bottom: 5%;
 }
 
 .join-button{
+    text-decoration: none;
     color: #1B4B5D;
     background: white;
     border: none;
